@@ -56,6 +56,28 @@
             display: block;
         }
 
+        .journal-image {
+            width: 800px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .journal-caption {
+            font-style: italic;
+            text-align: center;
+            margin-top: 5px;
+            color: #666;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         h1 {
             color: #333;
         }
@@ -76,13 +98,54 @@
 
 
     <div id="home" class="tab-content active">
-        <h1>Добро пожаловать!</h1>
-        <p>Это домашняя страница нашего сайта. Здесь вы можете найти основную информацию.</p>
+        <h1>Автоматизация процесса анкетирования в университете</h1>
+
+        <p class="project-description">Инновационное решение для создания, распространения и автоматической обработки
+            опросов любого уровня сложности.</p>
+
+        <div class="advantages">
+            <h2>Ключевые преимущества:</h2>
+            <ul>
+                <li>Автоматическая обработка результатов анкетирования</li>
+                <li>Упрощение создания новых анкет</li>
+                <li>Интеграция с платформой LMS</li>
+                <li>Экономия времени и ресурсов</li>
+            </ul>
+        </div>
     </div>
 
     <div id="about" class="tab-content">
-        <h1>О проекте</h1>
-        <p>Здесь находится информация о нашем проекте, его целях и задачах.</p>
+        <h1 class="section-title">О проекте</h1>
+
+        <div class="problem-section">
+            <h2>Актуальная проблема</h2>
+            <div class="problem-card">
+                <p>В настоящее время в университетах обработка результатов анкетирования выполняется вручную, что
+                    приводит к:</p>
+                <ul class="feature-list">
+                    <li>Значительным временным затратам на обработку данных</li>
+                    <li>Высокой вероятности человеческих ошибок</li>
+                    <li>Задержкам в получении аналитических отчётов</li>
+                    <li>Трудностям при создании и модификации анкет</li>
+                    <li>Отсутствию единого хранилища данных</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="solution-section">
+            <h2>Наше решение</h2>
+            <div class="solution-card">
+                <p>Мы разрабатываем систему автоматизации анкетирования, которая решает эти проблемы через:</p>
+                <ul class="feature-list">
+                    <li><strong>Полную автоматизацию</strong> обработки результатов</li>
+                    <li><strong>Интеграцию с LMS</strong> (Learning Management System)</li>
+                    <li><strong>Конструктор анкет</strong> с интуитивным интерфейсом</li>
+                    <li><strong>Мгновенную аналитику</strong> с визуализацией данных</li>
+                    <li><strong>Централизованное хранилище</strong> всех результатов</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     </div>
 
     <div id="members" class="tab-content">
@@ -92,18 +155,119 @@
 
     <div id="journal" class="tab-content">
         <h1>Журнал</h1>
-        <p>Последние новости и обновления проекта.</p>
+
+        <div class="journal-item">
+            <img src="program_arch.png" alt="Создана архитектура базы данных для проекта" class="journal-image">
+            <p class="journal-caption">Архитектура кода</p>
+        </div>
+
+        <div class="journal-item">
+            <img src="db_image.png" alt="Создана архитектура базы данных для проекта" class="journal-image">
+            <p class="journal-caption">Создана архитектура базы данных для проекта</p>
+        </div>
+
+        <div class="journal-item">
+            <img src="program.png" alt="Фрагмент кода" class="journal-image">
+            <p class="journal-caption">Написание документации в Markdown</p>
+        </div>
+
+        <div class="journal-item">
+            <img src="journal2_1.png" class="journal-image">
+        </div>
+
+        <div class="journal-item">
+            <img src="journal2_2.png" class="journal-image">
+        </div>
+
+        <div class="journal-item">
+            <img src="journal2_3.png" class="journal-image">
+        </div>
+
+        <div class="journal-item">
+            <img src="journal2_4.png" class="journal-image">
+        </div>
+
+        <div class="journal-item">
+            <img src="journal2_5.png" alt="Написание документации в Markdown" class="journal-image">
+            <p class="journal-caption">Написание документации в Markdown</p>
+        </div>
 
         <div class="journal-entry">
-            <img src="journal.png" alt="Разработка переключения между вкладками" class="journal-image">
-            <p class="journal-caption">Разработан базовый функционал переключения между вкладками на сайте</p>
+            <div class="journal-item">
+                <img src="journal.png" alt="Разработка переключения между вкладками" class="journal-image">
+                <p class="journal-caption">Разработан базовый функционал переключения между вкладками на сайте</p>
+            </div>
         </div>
+
 
     </div>
 
     <div id="resources" class="tab-content">
         <h1>Ресурсы</h1>
         <p>Полезные материалы и ссылки, связанные с нашим проектом.</p>
+        <h1>Полезные ресурсы</h1>
+
+        <h2>Официальные ресурсы Московского Политеха</h2>
+        <ul>
+            <li>Официальный сайт Мосполитеха - <a href="https://mospolytech.ru"
+                    target="_blank">https://mospolytech.ru</a></li>
+            <li>Портал дистанционного обучения - <a href="https://online.mospolytech.ru"
+                    target="_blank">https://online.mospolytech.ru</a></li>
+            <li>API интеграции с 1С:Университет - <a href="https://api.mospolytech.ru/docs"
+                    target="_blank">https://api.mospolytech.ru/docs</a></li>
+        </ul>
+
+        <h2>Техническая документация</h2>
+        <h3>Frontend</h3>
+        <ul>
+            <li>Vue.js Official Documentation - <a href="https://vuejs.org/guide"
+                    target="_blank">https://vuejs.org/guide</a></li>
+            <li>Element UI Components - <a href="https://element-plus.org/en-US"
+                    target="_blank">https://element-plus.org/en-US</a></li>
+            <li>Chart.js для визуализации данных - <a href="https://www.chartjs.org"
+                    target="_blank">https://www.chartjs.org</a></li>
+        </ul>
+
+        <h3>Backend</h3>
+        <ul>
+            <li>Django REST Framework - <a href="https://www.django-rest-framework.org"
+                    target="_blank">https://www.django-rest-framework.org</a></li>
+            <li>PostgreSQL Documentation - <a href="https://www.postgresql.org/docs"
+                    target="_blank">https://www.postgresql.org/docs</a></li>
+            <li>Redis для кеширования - <a href="https://redis.io/documentation"
+                    target="_blank">https://redis.io/documentation</a></li>
+        </ul>
+
+        <h2>Инструменты разработки</h2>
+        <ul>
+            <li>Docker для развертывания - <a href="https://docs.docker.com" target="_blank">https://docs.docker.com</a>
+            </li>
+            <li>Postman для тестирования API - <a href="https://www.postman.com"
+                    target="_blank">https://www.postman.com</a></li>
+            <li>Jupyter для анализа данных - <a href="https://jupyter.org/documentation"
+                    target="_blank">https://jupyter.org/documentation</a></li>
+        </ul>
+
+        <h2>Академические материалы</h2>
+        <ul>
+            <li>Методология составления анкет (PDF) - <a href="https://mospolytech.ru/upload/survey-methods.pdf"
+                    target="_blank">https://mospolytech.ru/upload/survey-methods.pdf</a></li>
+            <li>Исследование эффективности онлайн-анкетирования - <a href="https://elibrary.ru/item.asp?id=38567229"
+                    target="_blank">https://elibrary.ru/item.asp?id=38567229</a></li>
+            <li>ГОСТ Р 50779.42-2021 Статистические методы - <a
+                    href="https://protect.gost.ru/document.aspx?control=7&id=222513"
+                    target="_blank">https://protect.gost.ru/document.aspx?control=7&id=222513</a></li>
+        </ul>
+
+        <h2>Полезные GitHub репозитории</h2>
+        <ul>
+            <li>Пример системы анкетирования на Django - <a href="https://github.com/example/django-survey"
+                    target="_blank">https://github.com/example/django-survey</a></li>
+            <li>Шаблоны анкет для образования - <a href="https://github.com/example/edu-survey-templates"
+                    target="_blank">https://github.com/example/edu-survey-templates</a></li>
+            <li>Библиотека для анализа ответов - <a href="https://github.com/example/survey-analytics"
+                    target="_blank">https://github.com/example/survey-analytics</a></li>
+        </ul>
     </div>
 
     <script>
