@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автоматизация процесса анкетирования</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 0;
+        }
+        .tabs {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+			justify-content: center;
+        }
+        .tabs li {
+            padding: 15px 20px;
+            cursor: pointer;
+            background-color: #444;
+            transition: background-color 0.3s;
+        }
+        .tabs li:hover {
+            background-color: #555;
+        }
+        .tabs li.active {
+            background-color: #1e88e5;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .tab-content.active {
+            display: block;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="tabs">
+            <li class="active" onclick="openTab('home')">Домашняя страница</li>
+            <li onclick="openTab('about')">О проекте</li>
+            <li onclick="openTab('members')">Участники</li>
+            <li onclick="openTab('journal')">Журнал</li>
+            <li onclick="openTab('resources')">Ресурсы</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="home" class="tab-content active">
+        <h1>Добро пожаловать!</h1>
+        <p>Это домашняя страница нашего сайта. Здесь вы можете найти основную информацию.</p>
+    </div>
+
+    <div id="about" class="tab-content">
+        <h1>О проекте</h1>
+        <p>Здесь находится информация о нашем проекте, его целях и задачах.</p>
+    </div>
+
+    <div id="members" class="tab-content">
+        <h1>Участники</h1>
+        <p>Список участников нашего проекта и их роли.</p>
+    </div>
+
+    <div id="journal" class="tab-content">
+        <h1>Журнал</h1>
+        <p>Последние новости и обновления проекта.</p>
+    </div>
+
+    <div id="resources" class="tab-content">
+        <h1>Ресурсы</h1>
+        <p>Полезные материалы и ссылки, связанные с нашим проектом.</p>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            const tabContents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+            
+            const tabButtons = document.getElementsByTagName('li');
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active');
+            }
+            
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
