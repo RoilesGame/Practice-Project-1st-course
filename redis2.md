@@ -25,6 +25,7 @@ def get_response(self, command, *args):
     if not handler:
         raise ProtocolError(f"Неизвестная команда: {command}")
     return handler(*args)
+```
 
 ## Обработка исключений
 
