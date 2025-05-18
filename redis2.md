@@ -54,6 +54,7 @@ def execute(self, *args):
 - Класс `ProtocolHandler` для:
   - Разбора входящих запросов
   - Формирования ответов клиентам
+
 ![Класс `ProtocolHandler`](python_1.png)
 
 ## Выполнение команд
